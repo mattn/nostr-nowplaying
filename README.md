@@ -5,8 +5,14 @@ Update #nowplaying NIP-38 status (kind 30315) for Rhythmbox
 ## Usage
 
 ```
-$ ./nostr-nowplaying.sh
+$ ./nostr-nowplaying-rhythmbox.sh
 ```
+
+|Name                         |Description       |
+|-----------------------------|------------------|
+|nostr-nowplaying-mpd.ps1     |MPD for Windows   |
+|nostr-nowplaying-mpd.sh      |MPD for UNIX      |
+|nostr-nowplaying-rhythmbox.sh|Rhythmbox for UNIX|
 
 ## Requirements
 

@@ -7,7 +7,7 @@ function sendMusicStatus() {
   fi
   title_enc=$(echo $title | jq -Rr '@uri')
   expiration=$(date -d'+5minutes' +%s)
-  algia event --kind 30315 --content "♫ $title" --tag d=music --tag expiration="$expiration" --tag r="spotify:search:$title_enc"
+  algia event --kind 30315 --content "$title" --tag d=music --tag expiration="$expiration" --tag r="spotify:search:$title_enc"
 }
 
 export -f sendMusicStatus
